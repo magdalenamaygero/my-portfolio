@@ -1,3 +1,5 @@
+import React from "react";
+
 type Project = {
     title: string;
     description: string;

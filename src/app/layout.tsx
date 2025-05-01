@@ -1,5 +1,5 @@
+import React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
@@ -24,6 +24,9 @@ export default function RootLayout({
             </Link>
             <Link href="/about" className="text-indigo-500 hover:underline">
               About
+            </Link>
+            <Link href="/projects" className="text-indigo-500 hover:underline">
+              Projects
             </Link>
           </div>
         </nav>
