@@ -14,7 +14,7 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena M. Gero</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena May Gero</h2>
           <p className="text-lg text-gray-600 mb-12">
             I'm a software developer building clean, user-friendly web apps. Welcome to my portfolio!
           </p>
@@ -40,9 +40,10 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
             <ul className="list-disc list-inside text-gray-600">
               <li>How I got started as a software developer.</li>
-              <li>My tech stack, tools, and experience.</li>
-              <li>What I like to do in my free time.</li>
-            </ul>
+              <li>My tech stack, tools, and experiences.</li>
+              <li>What I'm passionate about.</li>
+              <li>Achievements and goals.</li>
+              </ul>
           </div>
 
           <Link

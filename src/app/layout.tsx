@@ -37,12 +37,12 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="border-t border-gray-200 bg-white text-gray-600 text-sm text-center py-6">
-          Connect with me:
-          <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
-            🐙 GitHub
-          </a>
+          Connect:
           <a href="https://linkedin.com/in/magdalena-may-gero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
+          </a>
+          <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
+            🐙 GitHub
           </a>
           <a href="mailto:youremail@example.com" className="ml-4 hover:underline">
             📧 Email Me

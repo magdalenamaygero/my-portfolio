@@ -2,8 +2,20 @@
 import Image from "next/image";
 import React from "react";
 import PageContainer from "@/components/PageContainer";
+import { useKeenSlider } from "keen-slider/react";
+
 
 export default function AboutPage() {
+
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    mode: "snap",
+    slides: {
+      perView: 1,
+      spacing: 16,
+    },
+  });
+
   return (
     <main className="text-gray-800">
       <PageContainer>
@@ -11,19 +23,17 @@ export default function AboutPage() {
         <section>
           <h1 className="text-4xl font-bold mb-6 text-gray-900">About Magdalena Gero</h1>
           <p className="text-lg text-gray-700 leading-7">
-            Hi, I'm Magdalena Gero — a passionate software developer who enjoys creating
-            clean, accessible, and user-friendly web applications. I love learning new technologies and
-            continuously improving my craft.
+          Hi, I'm Magdalena — a software developer who enjoys creating clean, accessible, and user-friendly applications. My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
           </p>
           <p className="text-lg text-gray-700 leading-7 mt-4">
-            I specialize in front-end development using React, Next.js, and Tailwind CSS. This portfolio showcases some of my favorite work and experiments.
+            I specialize in frontend development using React, Next.js, and Tailwind CSS. This portfolio showcases some of my favorite work and experiments.
           </p>
         </section>
 
         {/* Medium Articles */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-          <ul className="space-y-3 list-disc list-inside text-indigo-600 text-lg">
+          <ul className="space-y-3 text-indigo-700 text-lg">
             <li>
               <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 🔗 React
@@ -58,26 +68,61 @@ export default function AboutPage() {
           <div className="space-y-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               <Image
-                src="/images/workspace1.jpg"
+                src="/images/Screenshot 2024-09-26 at 6.53.20 PM.png"
                 alt="Mentoring"
                 width={400}
                 height={250}
                 className="rounded-lg shadow-md"
               />
               <p className="text-gray-700 text-lg">
-                I spend time mentoring young engineers, teaching and learning new things.
+                I spend time mentoring young engineers, guiding them through the world of software development.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
               <Image
-                src="/images/workspace2.jpg"
+                src="/images/i-ZrWFGmX-X4.jpg"
                 alt="Creativity & Friends"
                 width={400}
                 height={250}
                 className="rounded-lg shadow-md"
               />
               <p className="text-gray-700 text-lg">
-                Outside of work, I enjoy being creative, spending time with family and friends, and exploring new places.
+              After teaching at The Marcy Lab School in Brooklyn, NY, I proudly cheered my students on as they crossed the graduation podium.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+              <Image
+                src="/images/1738911160281.jpeg"
+                alt="Creativity & Friends"
+                width={400}
+                height={250}
+                className="rounded-lg shadow-md"
+              />
+              <p className="text-gray-700 text-lg">
+              I continuously strive to strengthen my skills in problem-solving and emerging technologies. Most recently, I completed Microsoft’s Introduction to Computers, Operating Systems, and Security course, expanding my foundation in core computing concepts.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+              <Image
+                src="/images/Screenshot 2025-05-04 at 10.55.19 PM.png"
+                alt="Certificates"
+                width={400}
+                height={250}
+                className="rounded-lg shadow-md"
+              />
+              <p className="text-gray-700 text-lg">
+                I continuously strive to improve my skills in problem-solving, data structures and algorithms, and new technologies. Recently, I successfully completed a Microsoft course: Introduction to Computers and Operating Systems and Security.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+              <Image
+                src="/images/ChristmasEditionByRR_7497.jpg"
+                alt="Creativity & Friends"
+                width={400}
+                height={250}
+                className="rounded-lg shadow-md"
+              />
+              <p className="text-gray-700 text-lg">
+                Last but not least, my family is my strongest support system, and I'm grateful for their unwavering love and encouragement.
               </p>
             </div>
           </div>
