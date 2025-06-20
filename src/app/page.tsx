@@ -30,7 +30,7 @@ export default function HomePage() {
 
           <Link
             href="/projects"
-            className="inline-block mt-4 px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7A869C] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             View My Projects →
           </Link>
@@ -48,7 +48,7 @@ export default function HomePage() {
 
           <Link
             href="/about"
-            className="inline-block mt-4 px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7A869C] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             About Me →
           </Link>

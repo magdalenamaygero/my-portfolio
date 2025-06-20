@@ -41,7 +41,7 @@ export default function AboutPage() {
           {/* Medium Articles */}
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-            <ul className="space-y-3 text-indigo-800 text-lg">
+            <ul className="space-y-3 text-purple-800 text-lg">
               <li>
                 <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:underline">
                   🔗 React
@@ -82,7 +82,7 @@ export default function AboutPage() {
                   height={250}
                   className="rounded-lg shadow-md"
                 />
-                <p className="text-gray-700 text-lg">
+                <p className="text-gray-700 text-lg font-serif">
                   I spend time mentoring young engineers, guiding them through the world of software development.
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                   height={250}
                   className="rounded-lg shadow-md"
                 />
-                <p className="text-gray-700 text-lg">
+                <p className="text-gray-700 text-lg font-serif">
                 After teaching at The Marcy Lab School in Brooklyn, NY, I proudly cheered my students on as they crossed the graduation podium.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   height={250}
                   className="rounded-lg shadow-md"
                 />
-                <p className="text-gray-700 text-lg">
+                <p className="text-gray-700 text-lg font-serif">
                 Most recently, I completed three cycles of the Google Software Engineering Program (GSWEP), where I worked closely with Google engineers to deepen my knowledge of data structures, algorithms, and technical interview preparation.</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
@@ -117,7 +117,7 @@ export default function AboutPage() {
                   height={250}
                   className="rounded-lg shadow-md"
                 />
-                <p className="text-gray-700 text-lg">
+                <p className="text-gray-700 text-lg font-serif">
                   I continuously strive to improve my skills in problem-solving, data structures and algorithms, and new technologies. Recently, I successfully completed a Microsoft course: Introduction to Computers and Operating Systems and Security.
                 </p>
               </div>
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   height={250}
                   className="rounded-lg shadow-md"
                 />
-                <p className="text-gray-700 text-lg">
+                <p className="text-gray-700 text-lg font-serif">
                   Last but not least, my family is my strongest support system, and I'm grateful for their unwavering love and encouragement.
                 </p>
               </div>

@@ -40,62 +40,60 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl font-bold mb-8 text-gray-900 text-center">Projects</h1>
+          <h1 className="text-4xl font-bold mb-8 text-gray-900 text-center">Projects</h1>
+
           <ul className="space-y-6">
             {projects.map((project, index) => (
-              <motion.li
-                key={project.title}
-                className="rounded p-6 shadow-sm bg-white border border-gray-200"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <h2 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h2>
-                <p className="text-gray-700 font-serif mb-4">{project.description}</p>
+            <motion.li
+              key={project.title}
+              className="rounded p-6 shadow-sm bg-white border border-purple-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <h2 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h2>
+              <p className="text-gray-700 font-serif mb-4">{project.description}</p>
 
-                <div className="space-y-1">
+              <div className="space-y-1">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-800 hover:underline font-medium block"
+                >
+                  🚀 View Live →
+                </a>
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-800 hover:underline font-medium block"
+                >
+                  🗂 View GitHub →
+                </a>
+                {project.figma && (
                   <a
-                    href={project.link}
+                    href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-700 hover:underline font-medium block"
+                    className="text-purple-800 hover:underline font-medium block"
                   >
-                    🚀 View Live →
+                    🖥️ View Figma Wireframe →
                   </a>
-                  
+                )}
+                {project.presentation && (
                   <a
-                    href={project.repo}
+                    href={project.presentation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-700 hover:underline font-medium block"
+                    className="text-purple-800 hover:underline font-medium block"
                   >
-                    🗂 View GitHub →
+                    📽️ View System Design →
                   </a>
-
-                  {project.figma && (
-                    <a
-                      href={project.figma}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-700 hover:underline font-medium block"
-                    >
-                      🖥️ View Figma Wireframe →
-                    </a>
-                  )}
-
-                  {project.presentation && (
-                    <a
-                      href={project.presentation}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-700 hover:underline font-medium block"
-                    >
-                      📽️ View System Design →
-                    </a>
-                  )}
-                </div>
-              </motion.li>
+                )}
+              </div>
+            </motion.li>
             ))}
           </ul>
         </motion.div>
