@@ -1,12 +1,12 @@
 'use client';
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 import PageContainer from "@/components/PageContainer";
 
 export default function HomePage() {
   return (
-    <main className="text-gray-800">
+<main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
       <PageContainer>
         <motion.div
           className="text-center"
@@ -15,16 +15,16 @@ export default function HomePage() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena May Gero</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            I'm a software developer building clean, user-friendly web apps. Welcome to my portfolio!
+          <p className="text-lg text-gray-600 font-serif mb-12">
+            I'm a software developer building clean, user-friendly web apps. <br></br>Welcome to my portfolio!
           </p>
 
           {/* Featured Projects Preview */}
           <div className="border border-purple-300 rounded-lg p-6 mb-8 shadow-sm text-left">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>🧩 Risk-free stock market simulation for learning and strategy building.</li>
-              <li>🛠 Connect with local sustainability events and promote eco-action.</li>
+            <ul className="list-disc list-inside text-gray-600 space-y-2">
+              <li>📊 Risk-free stock market simulation for learning and strategy building</li>
+              <li>🔋 Connect with local sustainability events and promote eco-action</li>
             </ul>
           </div>
 
@@ -38,12 +38,12 @@ export default function HomePage() {
           {/* Learn More Preview */}
           <div className="border border-purple-300 rounded-lg p-6 mt-12 mb-6 shadow-sm text-left">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>How I got started as a software developer.</li>
-              <li>My tech stack, tools, and experiences.</li>
-              <li>What I'm passionate about.</li>
-              <li>Achievements and goals.</li>
-              </ul>
+            <ul className="list-disc list-inside text-gray-600 space-y-2">
+              <li>How I got started as a software developer</li>
+              <li>My tech stack, tools, and experiences</li>
+              <li>Personal achievements and goals</li>
+              <li>What I'm passionate about</li>
+            </ul>
           </div>
 
           <Link
@@ -57,3 +57,4 @@ export default function HomePage() {
     </main>
   );
 }
+

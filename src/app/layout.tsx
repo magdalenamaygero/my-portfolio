@@ -17,35 +17,38 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen bg-white text-gray-800 font-sans">
         {/* Navbar */}
-        <nav className="w-full px-6 py-4 border-b border-gray-200 bg-white flex justify-between items-center shadow-sm">
-          <h1 className="text-xl font-bold text-indigo-900">Magdalena Gero</h1>
-          <div className="space-x-6 text-sm font-medium">
-            <Link href="/" className="text-indigo-600 hover:underline">Home</Link>
-            <Link href="/about" className="text-indigo-600 hover:underline">About</Link>
-            <Link href="/projects" className="text-indigo-600 hover:underline">Projects</Link>
-          </div>
-        </nav>
+<nav className="w-full px-6 py-4 border-b border-gray-200 bg-slate-50 flex justify-between items-center shadow-sm">
+  <Link href="/" className="text-xl font-bold text-indigo-700 hover:text-indigo-900 transition-colors">
+    Magdalena Gero
+  </Link>
+  <div className="space-x-6 text-md font-medium">
+    <Link href="/" className="text-indigo-600 hover:text-indigo-800 transition-colors">Home</Link>
+    <Link href="/projects" className="text-indigo-600 hover:text-indigo-800 transition-colors">Projects</Link>
+    <Link href="/about" className="text-indigo-600 hover:text-indigo-800 transition-colors">About</Link>
+  </div>
+</nav>
+
 
         {/* Main Content */}
-<main className="flex-1 px-6 py-12 bg-white">
-  <div className="max-w-3xl mx-auto p-8 space-y-12">
-    {children}
-  </div>
-</main>
+        <main className="flex-1 px-6 py-12 bg-white">
+          <div className="max-w-3xl mx-auto p-8 space-y-12">
+            {children}
+          </div>
+        </main>
 
 
 
         {/* Footer */}
-        <footer className="border-t border-gray-200 bg-white text-gray-600 text-sm text-center py-6">
+        <footer className="border-t border-gray-200 bg-slate-50 text-gray-700 text-sm font-sans text-center py-6">
           Connect:
           <a href="https://linkedin.com/in/magdalena-may-gero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
           </a>
           <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
-            🐙 GitHub
+            📂 GitHub
           </a>
           <a href="mailto:youremail@example.com" className="ml-4 hover:underline">
-            📧 Email Me
+            📩 Email Me
           </a>
         </footer>
       </body>
