@@ -16,7 +16,7 @@ export default function HomePage() {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena May Gero</h2>
           <p className="text-lg text-gray-600 font-serif mb-12">
-            I'm a software developer building clean, user-friendly web apps. <br></br>Welcome to my portfolio!
+            I’m a software developer building clean, user-friendly web apps. <br></br>Welcome to my portfolio!
           </p>
 
           {/* Featured Projects Preview */}
@@ -42,7 +42,7 @@ export default function HomePage() {
               <li>How I got started as a software developer</li>
               <li>My tech stack, tools, and experiences</li>
               <li>Personal achievements and goals</li>
-              <li>What I'm passionate about</li>
+              <li>What I’m passionate about</li>
             </ul>
           </div>
 

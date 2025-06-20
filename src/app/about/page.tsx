@@ -2,20 +2,10 @@
 import Image from "next/image";
 import React from "react";
 import PageContainer from "@/components/PageContainer";
-import { useKeenSlider } from "keen-slider/react";
 import { motion } from "framer-motion";
 
 
 export default function AboutPage() {
-
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    mode: "snap",
-    slides: {
-      perView: 1,
-      spacing: 16,
-    },
-  });
 
   return (
 <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
@@ -30,7 +20,7 @@ export default function AboutPage() {
           <section>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">About Magdalena</h1>
             <p className="text-lg text-gray-700 font-serif leading-7">
-            Hi, I'm Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. 
+            Hi, I’m Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. 
             I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
             </p>
             <p className="text-lg text-gray-700 font-serif leading-7 mt-4">
@@ -54,7 +44,7 @@ export default function AboutPage() {
               </li>
               <li>
                 <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  🔗 A Beginner's Guide to Redux
+                  🔗 A Beginner’s Guide to Redux
                 </a>
               </li>
               <li>
@@ -72,7 +62,7 @@ export default function AboutPage() {
 
           {/* Photos & Life Outside Coding */}
           <section>
-            <h2 className="text-2xl font-semibold mb-6 text-gray-900">What I Do When I'm Not Coding</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-gray-900">What I Do When I’m Not Coding</h2>
             <div className="space-y-10">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
                 <Image
@@ -130,7 +120,7 @@ export default function AboutPage() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-gray-700 text-lg font-serif">
-                  Last but not least, my family is my strongest support system, and I'm grateful for their unwavering love and encouragement.
+                  Last but not least, my family is my strongest support system, and I’m grateful for their unwavering love and encouragement.
                 </p>
               </div>
             </div>
