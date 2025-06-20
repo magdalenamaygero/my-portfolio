@@ -39,29 +39,29 @@ export default function AboutPage() {
           {/* Medium Articles */}
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-            <ul className="space-y-3 text-lg text-purple-700">
+            <ul className="space-y-3 text-lg text-[#7ca0e3]">
               <li>
-                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 React
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 Typescript: An Overview
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 A Beginner’s Guide to Redux
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 Understanding Big O Notation
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 Conceptualizing Data Structures
                 </a>
               </li>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </section>
 
           {/* Photos & Life Outside Coding */}
-          <section>
+          <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-6 text-gray-900">What I Do When I’m Not Coding</h2>
             <div className="space-y-10">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
@@ -105,7 +105,8 @@ export default function AboutPage() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-gray-700 text-lg font-serif">
-                Most recently, I completed three cycles of the Google Software Engineering Program (GSWEP), where I worked closely with Google engineers to deepen my knowledge of data structures, algorithms, and technical interview preparation.</p>
+                Most recently, I completed three cycles of the Google Software Engineering Program (G-SWEP), where I worked closely with Google engineers to deepen my knowledge of data structures, algorithms, 
+                and interview preparation.</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
                 <Image
@@ -116,7 +117,8 @@ export default function AboutPage() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-gray-700 text-lg font-serif">
-                  I continuously strive to improve my skills in problem-solving, data structures and algorithms, and new technologies. Recently, I successfully completed a Microsoft course: Introduction to Computers and Operating Systems and Security.
+                  I continuously strive to improve my skills in problem-solving and new technologies. Recently, I successfully completed a Microsoft course: 
+                  Introduction to Computers and Operating Systems and Security.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">

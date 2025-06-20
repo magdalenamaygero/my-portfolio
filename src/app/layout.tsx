@@ -35,8 +35,8 @@ export default function RootLayout({
         </nav>
 
         {/* Main Content */}
-        <main className="flex-1 px-6 py-12 bg-white">
-          <div className="max-w-3xl mx-auto p-8 space-y-12">
+        <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-3xl mx-auto p-4 space-y-12">
             {children}
           </div>
         </main>
@@ -53,7 +53,7 @@ export default function RootLayout({
             📂 GitHub
           </a>
           <a href="mailto:magdalenamgero@gmail.com" className="ml-4 hover:underline">
-            📩 Email Me
+            📩 Email
           </a>
         </footer>
       </body>

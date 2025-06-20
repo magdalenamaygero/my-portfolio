@@ -20,7 +20,7 @@ export default function HomePage() {
           </p>
 
           {/* Featured Projects Preview */}
-          <div className="border border-purple-300 rounded-lg p-6 mb-8 shadow-sm text-left w-full">
+          <div className="border border-purple-200 rounded-lg p-6 mb-8 shadow-sm text-left w-full">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>📊 Risk-free stock market simulation for strategy building</li>
@@ -36,7 +36,7 @@ export default function HomePage() {
           </Link>
 
           {/* Learn More Preview */}
-          <div className="border border-purple-300 rounded-lg p-6 mt-12 mb-6 shadow-sm text-left">
+          <div className="border border-purple-200 rounded-lg p-6 mt-12 mb-6 shadow-sm text-left">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>How I got started as a software developer</li>

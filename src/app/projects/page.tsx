@@ -46,7 +46,7 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
             <motion.li
               key={project.title}
-              className="rounded p-6 shadow-sm bg-white border border-purple-300"
+              className="rounded p-6 shadow-sm bg-white border border-purple-200"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-800 hover:underline font-medium block"
+                  className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
                 >
                   🚀 View Website →
                 </a>
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-800 hover:underline font-medium block"
+                  className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
                 >
                   🗂 View GitHub →
                 </a>
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-800 hover:underline font-medium block"
+                    className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
                   >
                     🖥️ View Figma Wireframe →
                   </a>
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                     href={project.presentation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-purple-800 hover:underline font-medium block"
+                    className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
                   >
                     📽️ View System Design →
                   </a>
