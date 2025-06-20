@@ -24,13 +24,13 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>📊 Risk-free stock market simulation for strategy building</li>
-              <li>🔋 Connect with local sustainability events and promote action</li>
+              <li>🔋 Connects users with sustainability and community events.</li>
             </ul>
           </div>
 
           <Link
             href="/projects"
-            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7ca0e3] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             View My Projects →
           </Link>
@@ -48,7 +48,7 @@ export default function HomePage() {
 
           <Link
             href="/about"
-            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7ca0e3] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             About Me →
           </Link>

@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "RecyClique",
     description:
-      "RecyClique is a community-focused web app that encourages participation in local sustainability events and raises awareness about waste reduction.",
+      "RecyClique is a community-driven web app that encourages environmental action by helping users discover and participate in local sustainability events.",
     link: "https://recyclique.onrender.com/",
     repo: "https://github.com/RecyClique/RecyClique_project",
     presentation: "https://docs.google.com/presentation/d/1z_klqvbZ0ZDDksF1zCRpHnz__8pzr2RaMEP1p7UJFDw/present",
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
+                  className="text-[#7898d2] hover:font-bold font-medium block"
                 >
                   🚀 View Website →
                 </a>
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
+                  className="text-[#7898d2] hover:font-bold font-medium block"
                 >
                   🗂 View GitHub →
                 </a>
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
+                    className="text-[#7898d2] hover:font-bold font-medium block"
                   >
                     🖥️ View Figma Wireframe →
                   </a>
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                     href={project.presentation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#7898d2] hover:underline hover:font-bold font-medium block"
+                    className="text-[#7898d2] hover:font-bold font-medium block"
                   >
                     📽️ View System Design →
                   </a>

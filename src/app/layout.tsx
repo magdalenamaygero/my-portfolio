@@ -18,17 +18,17 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
         {/* Navbar */}
       <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 flex justify-between items-center shadow-sm">
-          <Link href="/" className="text-2xl font-bold text-[#8E9AAF]  hover:text-[#7ca0e3] transition-colors duration-200">
+          <Link href="/" className="text-2xl font-bold text-[#8E9AAF]  hover:text-[#7898d2] transition-colors duration-200">
             Magdalena Gero
           </Link>
           <div className="space-x-6 text-md font-serif">
-            <Link href="/" className="text-[#8E9AAF] hover:text-[#7ca0e3] hover:underline transition-colors duration-200">
+            <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
               Home
             </Link>
-            <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7ca0e3] hover:underline transition-colors duration-200">
+            <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
               Projects
             </Link>
-            <Link href="/about" className="text-[#8E9AAF] hover:text-[#7ca0e3] hover:underline transition-colors duration-200">
+            <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
               About
             </Link>
           </div>
