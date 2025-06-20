@@ -31,7 +31,7 @@ export default function AboutPage() {
           {/* Medium Articles */}
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-            <ul className="space-y-3 text-purple-800 text-lg">
+            <ul className="space-y-3 text-lg text-purple-700">
               <li>
                 <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:underline">
                   🔗 React

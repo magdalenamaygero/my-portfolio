@@ -6,7 +6,7 @@ import PageContainer from "@/components/PageContainer";
 
 export default function HomePage() {
   return (
-<main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
+<main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50 w-full-screen">
       <PageContainer>
         <motion.div
           className="text-center"
@@ -20,17 +20,17 @@ export default function HomePage() {
           </p>
 
           {/* Featured Projects Preview */}
-          <div className="border border-purple-300 rounded-lg p-6 mb-8 shadow-sm text-left">
+          <div className="border border-purple-300 rounded-lg p-6 mb-8 shadow-sm text-left w-full">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>📊 Risk-free stock market simulation for learning and strategy building</li>
-              <li>🔋 Connect with local sustainability events and promote eco-action</li>
+              <li>📊 Risk-free stock market simulation for strategy building</li>
+              <li>🔋 Connect with local sustainability events and promote action</li>
             </ul>
           </div>
 
           <Link
             href="/projects"
-            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7A869C] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7ca0e3] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             View My Projects →
           </Link>
@@ -48,7 +48,7 @@ export default function HomePage() {
 
           <Link
             href="/about"
-            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7A869C] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
+            className="inline-block mt-4 px-6 py-2 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7ca0e3] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
           >
             About Me →
           </Link>
