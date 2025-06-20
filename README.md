@@ -17,7 +17,6 @@ This is a responsive and accessible developer portfolio site built using **Next.
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/) – animations
 - [Keen Slider](https://keen-slider.io/) – image carousel
-- [React Icons](https://react-icons.github.io/react-icons/) – icons
 - Markdown + GitHub for documentation and version control
 
 ## 🧑‍💻 Setup Instructions
