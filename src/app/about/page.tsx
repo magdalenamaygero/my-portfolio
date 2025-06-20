@@ -17,8 +17,16 @@ export default function AboutPage() {
         className="space-y-16"
         >
           {/* Bio */}
-          <section>
+          <section className="mb-10">
             <h1 className="text-4xl font-bold mb-6 text-gray-900">About Magdalena</h1>
+            <div className="relative max-w-sm h-85 mx-auto mb-8">
+              <Image
+                src="/images/magdalena.jpeg"
+                alt="Image of Magdalena"
+                fill
+                className="rounded-lg shadow-md object-cover p-4"
+              />
+            </div>
             <p className="text-lg text-gray-700 font-serif leading-7">
             Hi, I’m Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. 
             I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
@@ -29,7 +37,7 @@ export default function AboutPage() {
           </section>
 
           {/* Medium Articles */}
-          <section>
+          <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
             <ul className="space-y-3 text-lg text-purple-700">
               <li>
