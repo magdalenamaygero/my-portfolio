@@ -52,7 +52,7 @@ export default function RootLayout({
           <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             📂 GitHub
           </a>
-          <a href="mailto:youremail@example.com" className="ml-4 hover:underline">
+          <a href="mailto:magdalenamgero@gmail.com" className="ml-4 hover:underline">
             📩 Email Me
           </a>
         </footer>

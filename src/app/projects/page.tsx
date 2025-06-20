@@ -62,7 +62,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="text-purple-800 hover:underline font-medium block"
                 >
-                  🚀 View Live →
+                  🚀 View Website →
                 </a>
                 <a
                   href={project.repo}
