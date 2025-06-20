@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
         {/* Navbar */}
       <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 flex justify-between items-center shadow-sm">
-          <Link href="/" className="text-2xl font-bold text-[#8E9AAF]  hover:text-purple-700 transition-colors duration-200">
+          <Link href="/" className="text-2xl font-bold text-[#8E9AAF]  hover:text-[#7ca0e3] transition-colors duration-200">
             Magdalena Gero
           </Link>
           <div className="space-x-6 text-md font-serif">
