@@ -6,9 +6,10 @@ Welcome to my personal portfolio site, built with modern web technologies to sho
 
 This is a responsive and accessible developer portfolio site built using **Next.js** and **Tailwind CSS**. It highlights my professional journey, frontend projects, blog posts, and personal interests. The site is designed with a clean, modern aesthetic inspired by platforms like Figma and Valnet, with subtle animations and emphasis on user experience.
 
-## 🚀 Live Demo
+## Deployed Website
 
-🌐 [Visit the Portfolio](https://your-live-site-link.com)
+[https://my-portfolio-1pw8.vercel.app/](https://my-portfolio-1pw8.vercel.app/)
+
 
 ## 🛠️ Technologies Used
 
