@@ -24,7 +24,7 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>📊 Risk-free stock market simulation for strategy building</li>
-              <li>🔋 Connects users with sustainability and community events.</li>
+              <li>🔋 Connects users with sustainability and community events</li>
             </ul>
           </div>
 
