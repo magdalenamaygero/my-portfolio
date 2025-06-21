@@ -19,21 +19,27 @@ export default function AboutPage() {
           {/* Bio */}
           <section className="mb-10">
             <h1 className="text-4xl font-bold mb-6 text-gray-900">About Magdalena</h1>
+            <div>
+            <p className="text-lg text-gray-700 font-serif leading-7">
+            Hi, I’m Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. 
+            </p>
+            </div>
+
+            <br></br> 
+
             <div className="relative max-w-sm h-85 mx-auto mb-8">
               <Image
                 src="/images/magdalena.jpeg"
                 alt="Image of Magdalena"
                 fill
                 className="rounded-lg shadow-md object-cover p-4"
-              />
+                />
             </div>
-            <p className="text-lg text-gray-700 font-serif leading-7">
-            Hi, I’m Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. 
-            I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
-            </p>
+
             <p className="text-lg text-gray-700 font-serif leading-7 mt-4">
-              I specialize in frontend development using React, Next.js, and Tailwind CSS. This portfolio showcases some of my favorite work and experiments.
-            </p>
+                 My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
+            <br></br> <br></br> I specialize in frontend development using React, Next.js, and Tailwind CSS. This portfolio showcases some of my favorite work and experiments. 
+            </p> 
           </section>
 
           {/* Medium Articles */}
