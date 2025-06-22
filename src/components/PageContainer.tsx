@@ -1,4 +1,11 @@
 import React from "react";
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Magdalena Gero | Portfolio",
+  description: "Magdalena Gero's portfolio built with Next.js",
+};
 
 export default function PageContainer({ children }: { children: React.ReactNode }) {
   return (
