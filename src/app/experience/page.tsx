@@ -28,7 +28,7 @@ export default function ExperiencePage() {
               <h2 className="text-2xl font-semibold text-gray-800">Lead Instructor – Amazon ’Launch’ Pre-Apprenticeship Program</h2>
               <p className="text-sm text-gray-500 mb-4">Mar 2024 – Jun 2024</p>
               <p className="text-gray-700 font-serif leading-7">
-                I led software development courses teaching React, JavaScript, semantic HTML, and CSS. I helped design, build, and deliver a project-based curriculum aligned with industry best practices, and mentored students through technical feedback, code reviews, and agile workflows. Throughout the program, I achieved 100% student retention and received 92.3% "Excellent" feedback ratings. This experience strengthened my ability to lead with clarity, adapt to diverse learning needs, and foster a collaborative classroom culture.              </p>
+                I led software development courses teaching React, JavaScript, semantic HTML, and CSS. I helped design, build, and deliver a project-based curriculum aligned with industry best practices, and mentored students through technical feedback, code reviews, and agile workflows. Throughout the program, I achieved 100% student retention and received 92.3% ’Excellent’ feedback ratings. This experience strengthened my ability to lead with clarity, adapt to diverse learning needs, and foster a collaborative classroom culture.              </p>
             </div>
 
         {/*Coding teacher Experience */}    
