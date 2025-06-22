@@ -28,6 +28,9 @@ export default function RootLayout({
             <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
               Projects
             </Link>
+            <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
+              Experience
+            </Link>
             <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline transition-colors duration-200">
               About
             </Link>
