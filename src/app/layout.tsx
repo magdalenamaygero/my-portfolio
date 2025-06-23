@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Ensure lucide-react is installed
 
 
@@ -19,58 +20,67 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
         {/* Navbar */}
         <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 shadow-sm">
-  <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
-            <Link
-              href="/"
-              className="text-2xl font-bold text-[#8E9AAF] hover:text-[#7898d2] transition-colors duration-200"
-            >
-              Magdalena Gero
-            </Link>
+        <div className="flex justify-between items-center w-full">
+        <div className="flex items-center space-x-4">
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="rounded-full"
+          />
+          <Link
+            href="/"
+            className="text-2xl font-bold text-[#8E9AAF] hover:text-[#7898d2] transition-colors duration-200">
+            Magdalena Gero
+          </Link>
+        </div>
 
-            {/* Desktop Nav */}
-            <div className="hidden md:flex space-x-6 text-md font-serif">
-              <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-                Home
-              </Link>
-              <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-                Projects
-              </Link>
-              <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-                Experience
-              </Link>
-              <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-                About
-              </Link>
-            </div>
 
-            {/* Mobile Menu Icon */}
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-[#8E9AAF]"
-              aria-label="Toggle Menu"
-            >
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex space-x-6 text-md font-serif">
+          <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+            Home
+          </Link>
+          <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+            Projects
+          </Link>
+          <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+            Experience
+          </Link>
+          <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+            About
+          </Link>
+        </div>
 
-          {/* Mobile Menu Links */}
-          {menuOpen && (
-            <div className="flex flex-col mt-4 space-y-3 md:hidden text-md font-serif">
-              <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
-                Home
-              </Link>
-              <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
-                Projects
-              </Link>
-              <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
-                Experience
-              </Link>
-              <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
-                About
-              </Link>
-            </div>
-          )}
-        </nav>
+        {/* Mobile Menu Icon */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-[#8E9AAF]"
+          aria-label="Toggle Menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu Links */}
+      {menuOpen && (
+        <div className="flex flex-col mt-4 space-y-3 md:hidden text-md font-serif">
+          <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
+          <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
+            Projects
+          </Link>
+          <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
+            Experience
+          </Link>
+          <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline" onClick={() => setMenuOpen(false)}>
+            About
+          </Link>
+        </div>
+      )}
+    </nav>
 
         {/* Main Content */}
         <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
