@@ -141,6 +141,31 @@ export default function AboutPage() {
               </div>
             </div>
           </section>
+
+        {/* Where to find me */}
+          <section className="mb-10"> 
+            <div className="text-left">
+              <h2 className="text-2xl font-semibold mb-6 text-gray-900">Where to Find Me</h2>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>
+                  <a href="https://www.linkedin.com/in/magdalenamgero/" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                    GitHub
+                  </a>
+                </li>
+                <li>  
+                  <a href="https://medium.com/@magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                    Medium
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </section>
         </motion.div>
       </PageContainer>
     </main>

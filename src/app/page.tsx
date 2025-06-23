@@ -40,8 +40,7 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>How I got started as a software developer</li>
-              <li>My tech stack, tools, and experiences</li>
-              <li>Personal achievements and goals</li>
+              <li>My  achievements, tech stack and tools</li>
               <li>What I’m passionate about</li>
             </ul>
           </div>
