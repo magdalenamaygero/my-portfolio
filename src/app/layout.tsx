@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
         {/* Navbar */}
         <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 shadow-sm">
-<div className="flex justify-between items-center w-full">
+  <div className="flex justify-between items-center w-full max-w-screen-xl mx-auto">
             <Link
               href="/"
               className="text-2xl font-bold text-[#8E9AAF] hover:text-[#7898d2] transition-colors duration-200"
@@ -89,7 +89,7 @@ export default function RootLayout({
           <a href="mailto:magdalenamgero@gmail.com" className="ml-4 hover:underline">
             📩 Email
           </a>
-        </footer>
+        </footer>   
       </body>
     </html>
   );
