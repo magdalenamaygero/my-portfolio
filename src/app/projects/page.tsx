@@ -62,7 +62,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="text-[#7898d2] hover:font-bold font-medium block"
                 >
-                  🚀 View Website →
+                  View Website →
                 </a>
                 <a
                   href={project.repo}
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="text-[#7898d2] hover:font-bold font-medium block"
                 >
-                  🗂 View GitHub →
+                  View GitHub →
                 </a>
                 {project.figma && (
                   <a
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                     rel="noopener noreferrer"
                     className="text-[#7898d2] hover:font-bold font-medium block"
                   >
-                    🖥️ View Figma Wireframe →
+                    View Figma Wireframe →
                   </a>
                 )}
                 {project.presentation && (
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                     rel="noopener noreferrer"
                     className="text-[#7898d2] hover:font-bold font-medium block"
                   >
-                    📽️ View System Design →
+                    View System Design →
                   </a>
                 )}
               </div>
