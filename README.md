@@ -8,8 +8,7 @@ This is a responsive and accessible developer portfolio site built using **Next.
 
 ## Deployed Website
 
-[https://my-portfolio-1pw8.vercel.app/](https://my-portfolio-1pw8.vercel.app/)
-
+https://www.magdalenagero.com/
 
 ## Technologies Used
 
