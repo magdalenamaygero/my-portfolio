@@ -27,11 +27,11 @@ export default function RootLayout({
             alt="Logo"
             width={32}
             height={32}
-            className="rounded-full"
+            className="rounded-full shadow-md"
           />
           <Link
             href="/"
-            className="text-2xl font-bold text-[#8E9AAF] hover:text-[#7898d2] transition-colors duration-200">
+            className="text-3xl font-bold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-200">
             Magdalena Gero
           </Link>
         </div>

@@ -27,7 +27,7 @@ export default function AboutPage() {
 
             <br></br> 
 
-            <div className="relative max-w-sm h-85 mx-auto mb-8">
+            <div className="relative max-w-sm h-85 mx-auto mb-8 bg-white border border-purple-200 shadow-md">
               <Image
                 src="/images/magdalena.jpeg"
                 alt="Image of Magdalena"
@@ -45,7 +45,7 @@ export default function AboutPage() {
           {/* Medium Articles */}
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-            <ul className="space-y-3 text-lg text-[#7ca0e3]">
+            <ul className="space-y-3 text-lg text-[#7898d2]">
               <li>
                 <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
                   🔗 React
