@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7898d2] hover:font-bold font-medium block"
+                  className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
                 >
                   View Website →
                 </a>
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#7898d2] hover:font-bold font-medium block"
+                  className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
                 >
                   View GitHub →
                 </a>
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#7898d2] hover:font-bold font-medium block"
+                    className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
                   >
                     View Figma Wireframe →
                   </a>
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                     href={project.presentation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#7898d2] hover:font-bold font-medium block"
+                    className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
                   >
                     View System Design →
                   </a>

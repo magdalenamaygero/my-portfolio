@@ -27,7 +27,7 @@ export default function AboutPage() {
 
             <br></br> 
 
-            <div className="relative max-w-sm h-85 mx-auto mb-8 bg-white border border-purple-200 shadow-md">
+            <div className="relative max-w-sm h-85 mx-auto mb-8 bg-white border rounded-lg border-purple-200 shadow-md">
               <Image
                 src="/images/magdalena.jpeg"
                 alt="Image of Magdalena"
@@ -47,27 +47,27 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
             <ul className="space-y-3 text-lg text-[#7898d2]">
               <li>
-                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className="hover:font-bold text-[#8E9AAF] hover:text-[#7898d2]">
                   🔗 React
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className="hover:font-bold text-[#8E9AAF] hover:text-[#7898d2]">
                   🔗 Typescript: An Overview
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className="hover:font-bold text-[#8E9AAF] hover:text-[#7898d2]">
                   🔗 A Beginner’s Guide to Redux
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className="hover:font-bold text-[#8E9AAF] hover:text-[#7898d2]">
                   🔗 Understanding Big O Notation
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className="hover:font-bold text-[#8E9AAF] hover:text-[#7898d2]">
                   🔗 Conceptualizing Data Structures
                 </a>
               </li>

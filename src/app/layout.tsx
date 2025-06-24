@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import "./globals.css";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Ensure lucide-react is installed
 
 
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
         {/* Navbar */}
-        <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 shadow-sm">
+        <nav className="w-full px-6 py-4 border-b border-purple-300 bg-gray-50 shadow-sm">
         <div className="flex justify-between items-center w-full">
         <div className="flex items-center space-x-4">
           {/* <Image
@@ -88,7 +88,7 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-purple-200 bg-slate-50 text-gray-900 text-sm font-sans text-center py-6">
+        <footer className="border-t border-purple-300 bg-slate-50 text-gray-900 text-sm font-sans text-center py-6">
           Connect:
           <a href="https://linkedin.com/in/magdalena-may-gero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
