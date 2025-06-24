@@ -22,13 +22,13 @@ export default function RootLayout({
         <nav className="w-full px-6 py-4 border-b border-purple-200 bg-gray-50 shadow-sm">
         <div className="flex justify-between items-center w-full">
         <div className="flex items-center space-x-4">
-          <Image
+          {/* <Image
             src="/images/logo.png"
             alt="Logo"
             width={32}
             height={32}
             className="rounded-full shadow-md"
-          />
+          /> */}
           <Link
             href="/"
             className="text-3xl font-bold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-200">
