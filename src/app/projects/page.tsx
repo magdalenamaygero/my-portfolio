@@ -46,7 +46,7 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
             <motion.li
               key={project.title}
-              className="rounded p-6 shadow-md bg-white border border-purple-300"
+              className="rounded p-6 shadow-md bg-white border border-purple-200"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -57,27 +57,27 @@ export default function ProjectsPage() {
 
               <div className="space-y-1">
                 <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
-                >
-                  View Website →
-                </a>
-                <a
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
+                  className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
                 >
                   View GitHub →
+                </a>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
+                >
+                  View Website →
                 </a>
                 {project.figma && (
                   <a
                     href={project.figma}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
+                    className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
                   >
                     View Figma Wireframe →
                   </a>
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                     href={project.presentation}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#8E9AAF] hover:text-[#7898d2] font-medium block"
+                    className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
                   >
                     View System Design →
                   </a>

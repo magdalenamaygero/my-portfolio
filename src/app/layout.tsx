@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
-        {/* Navbar */}
+        {/* Navbar option: sticky top-0*/}
         <nav className="w-full px-6 py-4 border-b border-purple-300 bg-gray-50 shadow-sm">
         <div className="flex justify-between items-center w-full">
         <div className="flex items-center space-x-4">
@@ -31,7 +31,7 @@ export default function RootLayout({
           /> */}
           <Link
             href="/"
-            className="text-3xl font-bold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-200">
+            className="text-3xl font-bold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-100">
             Magdalena Gero
           </Link>
         </div>
@@ -83,7 +83,7 @@ export default function RootLayout({
     </nav>
 
         {/* Main Content */}
-        <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
+        <main className="flex-1 px-6 py-10 bg-gradient-to-b from-white to-gray-50">
           <div className="max-w-3xl mx-auto p-4 space-y-12">{children}</div>
         </main>
 
@@ -92,9 +92,9 @@ export default function RootLayout({
           Connect:
           <a href="https://linkedin.com/in/magdalena-may-gero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
-          </a>
           <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             📂 GitHub
+          </a>
           </a>
           <a href="mailto:magdalenamgero@gmail.com" className="ml-4 hover:underline">
             📩 Email

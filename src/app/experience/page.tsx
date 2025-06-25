@@ -16,7 +16,7 @@ export default function ExperiencePage() {
 
           <div className="space-y-12">
             {/* Marcy Lab Experience */}
-            <div className="bg-white shadow-md border border-purple-300 rounded-lg p-6">
+            <div className="bg-white shadow-md border border-purple-200 rounded-lg p-6">
               <h2 className="text-2xl font-semibold text-gray-800">Teaching Assistant – The Marcy Lab School</h2>
               <p className="text-sm text-gray-500 mb-4">Oct 2023 – Mar 2024</p>
               <p className="text-gray-700 font-serif leading-7">
@@ -24,7 +24,7 @@ export default function ExperiencePage() {
             </div>
 
             {/* Amazon Launch Experience */}
-            <div className="bg-white shadow-md border border-purple-300 rounded-lg p-6">
+            <div className="bg-white shadow-md border border-purple-200 rounded-lg p-6">
               <h2 className="text-2xl font-semibold text-gray-800">Lead Instructor – Amazon ’Launch’ Pre-Apprenticeship Program</h2>
               <p className="text-sm text-gray-500 mb-4">Mar 2024 – Jun 2024</p>
               <p className="text-gray-700 font-serif leading-7">
@@ -32,7 +32,7 @@ export default function ExperiencePage() {
             </div>
 
         {/*Coding teacher Experience */}    
-            <div className="bg-white shadow-md border border-purple-300 rounded-lg p-6">
+            <div className="bg-white shadow-md border border-purple-200 rounded-lg p-6">
               <h2 className="text-2xl font-semibold text-gray-800">Coding Teacher - The Coding Space, Togetherhood & eCode Learning Center</h2>
               <p className="text-sm text-gray-500 mb-4">Jun 2024 – present</p>
               <p className="text-gray-700 font-serif leading-7">
