@@ -21,47 +21,47 @@ export default function RootLayout({
         {/* Navbar option: sticky top-0*/}
         <nav className="w-full px-6 py-4 border-b border-purple-300 bg-gray-50 shadow-sm">
         <div className="flex justify-between items-center w-full">
-        <div className="flex items-center space-x-4">
-          {/* <Image
-            src="/images/logo.png"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="rounded-full shadow-md"
-          /> */}
-          <Link
-            href="/"
-            className="text-3xl font-bold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-100">
-            Magdalena Gero
-          </Link>
+          <div className="flex items-center space-x-4">
+            {/* <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={32}
+              height={32}
+              className="rounded-full shadow-md"
+            /> */}
+            <Link
+              href="/"
+              className="text-3xl font-semibold text-[#8E9AAF] hover:text-[#7898d2] text-shadow-2xs hover:transition-colors duration-100">
+              Magdalena Gero
+            </Link>
+          </div>
+
+
+          {/* Desktop Nav */}
+          <div className="hidden md:flex space-x-6 text-md font-serif">
+            <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+              Home
+            </Link>
+            <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+              Projects
+            </Link>
+            <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+              Experience
+            </Link>
+            <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+              About
+            </Link>
+          </div>
+
+          {/* Mobile Menu Icon */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-[#8E9AAF]"
+            aria-label="Toggle Menu"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
-
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-6 text-md font-serif">
-          <Link href="/" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-            Home
-          </Link>
-          <Link href="/projects" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-            Projects
-          </Link>
-          <Link href="/experience" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-            Experience
-          </Link>
-          <Link href="/about" className="text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
-            About
-          </Link>
-        </div>
-
-        {/* Mobile Menu Icon */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-[#8E9AAF]"
-          aria-label="Toggle Menu"
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
 
       {/* Mobile Menu Links */}
       {menuOpen && (
@@ -88,13 +88,13 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-purple-300 bg-slate-50 text-gray-900 text-sm font-sans text-center py-6">
+        <footer className="border-t border-purple-300 bg-slate-50 text-gray-900 text-sm font-sans text-center py-5">
           Connect:
           <a href="https://linkedin.com/in/magdalena-may-gero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
+          </a>
           <a href="https://github.com/magdalenamaygero" className="ml-4 hover:underline" target="_blank" rel="noopener noreferrer">
             📂 GitHub
-          </a>
           </a>
           <a href="mailto:magdalenamgero@gmail.com" className="ml-4 hover:underline">
             📩 Email

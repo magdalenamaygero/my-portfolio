@@ -21,7 +21,7 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold mb-6 text-gray-900">About Magdalena</h1>
             <div>
             <p className="text-lg text-gray-700 font-serif leading-7">
-            Hi, I’m Magdalena; a software developer who enjoys creating clean, accessible, and user-friendly applications. 
+            Hi, I’m Magdalena - a software developer who enjoys creating clean, accessible, and user friendly applications. 
             </p>
             </div>
 
@@ -38,37 +38,37 @@ export default function AboutPage() {
 
             <p className="text-lg text-gray-700 font-serif leading-7 mt-4">
                  My heart lies in frontend development, where I blend my love for design and code to craft thoughtful digital experiences. I’m deeply inspired by art, always excited to learn new skills, and I find joy in exploring new places and cultures. Whether I’m building, mentoring or traveling, I’m always seeking creativity, connection, and growth.
-            <br></br> <br></br> I specialize in frontend development using React, Next.js, and Tailwind CSS. This portfolio showcases some of my favorite work and experiments. 
+            <br></br> <br></br> I specialize in frontend development using React, Next.js, and Tailwind CSS. Some other skills include JavaScript, TypeScript, Node.js and PostgreSQL, UI/UX design with Figma, version control with Git, deploying apps via Vercel, and a strong foundation in data structures, algorithms, and RESTful APIs. This portfolio showcases some of my favorite work and experiments. 
             </p> 
           </section>
 
           {/* Medium Articles */}
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Articles on Medium</h2>
-            <ul className="space-y-3 text-md">
+            <ul className="space-y-3 text-lg">
               <li>
-                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold">
-                  🔗 React
+                <a href="https://medium.com/@magdalenamgero/react-b2de21f539b4" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+                  React
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold">
-                  🔗 Typescript: An Overview
+                <a href="https://medium.com/@magdalenamgero/typescript-101-an-overview-e97ab6403e66" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+                  Typescript: An Overview
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold">
-                  🔗 A Beginner’s Guide to Redux
+                <a href="https://medium.com/@magdalenamgero/redux-66117af84d4c" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+                  A Beginner’s Guide to Redux
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold">
-                  🔗 Understanding Big O Notation
+                <a href="https://medium.com/@magdalenamgero/understanding-big-o-511369ccd841" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+                  Understanding Big O Notation
                 </a>
               </li>
               <li>
-                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold">
-                  🔗 Conceptualizing Data Structures
+                <a href="https://medium.com/@magdalenamgero/conceptualizing-data-structures-f7e25a56b54f" target="_blank" rel="noopener noreferrer" className=" text-[#8E9AAF] hover:text-[#7898d2] hover:underline">
+                  Conceptualizing Data Structures
                 </a>
               </li>
             </ul>
