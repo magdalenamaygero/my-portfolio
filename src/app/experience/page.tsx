@@ -4,7 +4,6 @@ import PageContainer from "@/components/PageContainer";
 import { motion } from "framer-motion";
 import ExperienceCard from "@/components/ExperienceCard";
 
-
 const experiences = [
   {
     title: "Teaching Assistant – The Marcy Lab School",
