@@ -5,6 +5,8 @@ import "./globals.css";
 import Link from "next/link";
 // import Image from "next/image";
 import { Menu, X } from "lucide-react"; // Ensure lucide-react is installed
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; 
 
 
 

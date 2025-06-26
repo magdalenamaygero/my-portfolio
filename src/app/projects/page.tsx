@@ -2,103 +2,122 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PageContainer from "@/components/PageContainer";
-
-type Project = {
-  title: string;
-  description: string;
-  link: string;
-  repo: string;
-  figma?: string;
-  presentation?: string;
-};
-
-const projects: Project[] = [
-  {
-    title: "Virtual Trades",
-    description:
-      "VirtualTrades is a stock market simulation platform that allows users to build and test trading strategies without financial risk.",
-    link: "https://virtual-trades.vercel.app/",
-    repo: "https://github.com/capstone-project-fullstack/VirtualTrades",
-    figma: "https://www.figma.com/proto/JCYOBMOOzqqsBvgDSS5CHi/Wireframing--Copy-?node-id=0-1&t=TR2CPwe2yv0ESrpC-1",
-  },
-  {
-    title: "RecyClique",
-    description:
-      "RecyClique is a community-driven web app that encourages environmental action by helping users discover and participate in local sustainability events.",
-    link: "https://recyclique.onrender.com/",
-    repo: "https://github.com/RecyClique/RecyClique_project",
-    presentation: "https://docs.google.com/presentation/d/1z_klqvbZ0ZDDksF1zCRpHnz__8pzr2RaMEP1p7UJFDw/present",
-  },
-];
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function ProjectsPage() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const projects = [
+    {
+      title: "Virtual Trades",
+      items: [
+        "Stock market simulation for learning and strategy building",
+        "Built with full-stack tech and deployed on Vercel",
+      ],
+      github: "https://github.com/capstone-project-fullstack/VirtualTrades",
+      website: "https://virtual-trades.vercel.app/",
+      figma: "https://www.figma.com/proto/JCYOBMOOzqqsBvgDSS5CHi/Wireframing--Copy-?node-id=0-1&t=TR2CPwe2yv0ESrpC-1",
+    },
+    {
+      title: "RecyClique",
+      items: [
+        "Community web app for local sustainability engagement",
+        "Features event discovery, profile system, and mapping",
+      ],
+      github: "https://github.com/RecyClique/RecyClique_project",
+      website: "https://recyclique.onrender.com/",
+      presentation: "https://docs.google.com/presentation/d/1z_klqvbZ0ZDDksF1zCRpHnz__8pzr2RaMEP1p7UJFDw/present",
+    },
+  ];
+
   return (
-<main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
+    <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50 w-full">
       <PageContainer>
         <motion.div
+          className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl font-bold mb-8 text-gray-900 text-center">Projects</h1>
 
-          <ul className="space-y-6">
+          <Slider {...settings}>
             {projects.map((project, index) => (
-            <motion.li
-              key={project.title}
-              className="rounded p-6 shadow-lg bg-gray-50 border border-purple-200 "
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <h2 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h2>
-              <p className="text-gray-700 font-serif mb-4">{project.description}</p>
-
-              <div className="space-y-1">
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
-                >
-                  View GitHub →
-                </a>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
-                >
-                  View Website →
-                </a>
-                {project.figma && (
-                  <a
-                    href={project.figma}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
-                  >
-                    View Figma Wireframe →
-                  </a>
-                )}
-                {project.presentation && (
-                  <a
-                    href={project.presentation}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#8E9AAF] hover:text-[#7898d2] hover:font-semibold font-medium block"
-                  >
-                    View System Design →
-                  </a>
-                )}
+              <div key={index} className="px-2">
+                <div className="border border-purple-300 bg-gray-50 rounded-lg p-6 shadow-lg text-left w-full">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+                  <ul className="list-disc list-inside text-gray-600 space-y-2 mb-4">
+                    {project.items.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-wrap justify-center gap-3">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                      >
+                        GitHub
+                      </a>
+                    )}
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                      >
+                        Website
+                      </a>
+                    )}
+                    {project.presentation && (
+                      <a
+                        href={project.presentation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                      >
+                        System
+                      </a>
+                    )}
+                    {project.figma && (
+                      <a
+                        href={project.figma}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                      >
+                        Figma
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
-            </motion.li>
             ))}
-          </ul>
+          </Slider>
         </motion.div>
       </PageContainer>
     </main>
   );
 }
+
 

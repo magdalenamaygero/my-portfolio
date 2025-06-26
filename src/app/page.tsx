@@ -1,10 +1,55 @@
 'use client';
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React from "react";
 import PageContainer from "@/components/PageContainer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import PreviewCard from "@/components/PreviewCard";
+import Slider from "react-slick";
+
 
 export default function HomePage() {
+  
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+    const cards = [
+    {
+      title: "Featured Projects",
+      items: [
+        "Risk-free stock market simulation app for learning and strategy building",
+        "Connecting users with sustainability initiatives and community events",
+      ],
+      href: "/projects",
+      buttonText: "My Projects →",
+    },
+    {
+      title: "Experience",
+      items: [
+        "Lead Instructor at Amazon 'Launch' Pre-Apprenticeship Program",
+        "Coding Teacher / Teaching Assistant"
+      ],
+      href: "/experience",
+      buttonText: "Experience →",
+    },
+    {
+      title: "Learn More About Me",
+      items: [
+        "Who I am as a software developer, my passions and achievements",
+        "Tech stack, developer tools and skills",
+      ],
+      href: "/about",
+      buttonText: "About Me →",
+    },
+  ];
+
+
   return (
 <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50 w-full">
       <PageContainer>
@@ -16,52 +61,16 @@ export default function HomePage() {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena  Gero</h2>
           <p className="text-lg text-gray-600 font-serif mb-12">
-            I’m a software developer building clean, user-friendly web apps. <br></br>Welcome to my portfolio!
+            I’m a software developer building clean, user-friendly web apps.<br></br>Welcome to my portfolio!
           </p>
 
-          {/* Featured Projects Preview */}
-          <div className="border border-purple-200 rounded-lg p-6 mb-8 shadow-lg text-left w-full bg-gray-50">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Risk-free stock market simulation app for learning and strategy building</li>
-              <li>Connecting users with sustainability initiatives and community events</li>
-            </ul>
-          </div>
-
-          <Link
-            href="/projects"
-            className="inline-block mt-4 px-6 py-2 shadow-md border border-purple-300 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
-          >
-            View My Projects →
-          </Link>
-
-          {/* experience Preview */}
-          <div className="border border-purple-200 bg-gray-50 rounded-lg p-6 mt-12 mb-6 shadow-lg text-left">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Experience</h3>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Lead Instructor / Coding Teacher / Teaching Assistant</li>
-            </ul>
-          </div>
-          <Link
-            href="/experience"
-            className="inline-block mt-4 px-6 py-2 shadow-md border border-purple-300 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:-translate-y-1 hover:scale-105">
-            Experience →
-          </Link>
-          {/* Learn More Preview */}
-          <div className="border border-purple-200 bg-gray-50 rounded-lg p-6 mt-12 mb-6 shadow-lg text-left">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Who I am as a software developer, my passions and achievements</li>
-              <li>Tech stack, developer tools and skills</li>
-            </ul>
-          </div>
-
-          <Link
-            href="/about"
-            className="inline-block mt-4 px-6 py-2 shadow-md border border-purple-300 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:-translate-y-1 hover:scale-105"
-          >
-            About Me →
-          </Link>
+          <Slider {...settings}>
+            {cards.map((card, index) => (
+              <div key={index} className="px-2">
+                <PreviewCard {...card} />
+              </div>
+            ))}
+          </Slider>
         </motion.div>
       </PageContainer>
     </main>
