@@ -46,7 +46,7 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
             <motion.li
               key={project.title}
-              className="rounded p-6 shadow-md bg-white border border-purple-200"
+              className="rounded p-6 shadow-lg bg-gray-50 border border-purple-200 "
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}

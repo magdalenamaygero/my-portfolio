@@ -14,13 +14,13 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena May Gero</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Magdalena  Gero</h2>
           <p className="text-lg text-gray-600 font-serif mb-12">
             I’m a software developer building clean, user-friendly web apps. <br></br>Welcome to my portfolio!
           </p>
 
           {/* Featured Projects Preview */}
-          <div className="border border-purple-200 rounded-lg p-6 mb-8 shadow-md text-left w-full">
+          <div className="border border-purple-200 rounded-lg p-6 mb-8 shadow-lg text-left w-full bg-gray-50">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Featured Projects</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Risk-free stock market simulation app for learning and strategy building</li>
@@ -36,7 +36,7 @@ export default function HomePage() {
           </Link>
 
           {/* experience Preview */}
-          <div className="border border-purple-200 rounded-lg p-6 mt-12 mb-6 shadow-md text-left">
+          <div className="border border-purple-200 bg-gray-50 rounded-lg p-6 mt-12 mb-6 shadow-lg text-left">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Experience</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Lead Instructor / Coding Teacher / Teaching Assistant</li>
@@ -48,7 +48,7 @@ export default function HomePage() {
             Experience →
           </Link>
           {/* Learn More Preview */}
-          <div className="border border-purple-200 rounded-lg p-6 mt-12 mb-6 shadow-md text-left">
+          <div className="border border-purple-200 bg-gray-50 rounded-lg p-6 mt-12 mb-6 shadow-lg text-left">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Learn More About Me</h3>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Who I am as a software developer, my passions and achievements</li>

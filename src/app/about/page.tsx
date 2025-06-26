@@ -27,7 +27,7 @@ export default function AboutPage() {
 
             <br></br> 
 
-            <div className="relative max-w-sm h-85 mx-auto mb-8 bg-white">
+            <div className="relative max-w-sm h-85 mx-auto mb-8 bg-gray-50">
               <Image
                 src="/images/magdalena.jpeg"
                 alt="Image of Magdalena"
@@ -164,7 +164,6 @@ export default function AboutPage() {
                 </li>
               </ul>
             </div>
-
           </section>
         </motion.div>
       </PageContainer>
