@@ -20,7 +20,7 @@ export default function PreviewCard({ title, items, href, buttonText }: PreviewC
       <div className="flex justify-center">
         <Link
           href={href}
-          className="inline-block mt-4 px-6 py-2 w-fit text-center shadow-md border border-purple-300 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200 hover:scale-101"
+          className="inline-block mt-4 px-6 py-2 w-fit text-center shadow-md border border-purple-300 bg-[#8E9AAF] text-white rounded-md hover:bg-[#7898d2] transition-transform duration-200"
           >
           {buttonText}
         </Link>
