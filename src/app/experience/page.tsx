@@ -3,6 +3,27 @@ import React from "react";
 import PageContainer from "@/components/PageContainer";
 import { motion } from "framer-motion";
 import ExperienceCard from "@/components/ExperienceCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 
 const experiences = [
   {
@@ -36,16 +57,17 @@ export default function ExperiencePage() {
         >
           <h1 className="text-4xl font-bold mb-8 text-gray-900 text-center">Experience</h1>
 
-          <div className="space-y-12">
+          <Slider {...settings}>
             {experiences.map((exp, index) => (
-              <ExperienceCard
-                key={index}
-                title={exp.title}
-                dates={exp.dates}
-                items={exp.items}
-              />
+              <div key={index} className="px-4">
+                <ExperienceCard
+                  title={exp.title}
+                  dates={exp.dates}
+                  items={exp.items}
+                />
+              </div>
             ))}
-          </div>
+          </Slider>
 
         </motion.div>
       </PageContainer>
