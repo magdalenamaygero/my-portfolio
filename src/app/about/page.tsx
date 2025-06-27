@@ -131,14 +131,14 @@ export default function AboutPage() {
               ].map((slide, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center h-[200px] w-full bg-gray-50 rounded-md px-6 py-6 text-center"
+                className="flex flex-col items-center h-[485px] w-full bg-gray-50 px-6 py-6 text-center"
               >
                 <Image
                   src={slide.src}
                   alt={slide.alt}
                   width={400}
                   height={250}
-                  className="rounded-lg object-contain mx-auto h-[250px] mb-6"
+                  className="w-full rounded-lg object-cover mx-auto h-[350px] mb-6 border border-purple-300"
                 />
                 <p className="text-gray-700 text-lg font-serif leading-7 max-w-xl">
                   {slide.text}
