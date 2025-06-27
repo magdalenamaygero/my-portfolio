@@ -3,9 +3,30 @@ import Image from "next/image";
 import React from "react";
 import PageContainer from "@/components/PageContainer";
 import { motion } from "framer-motion";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function AboutPage() {
+  const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 
   return (
 <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
@@ -33,6 +54,9 @@ export default function AboutPage() {
                 alt="Image of Magdalena"
                 fill
                 className="rounded-lg shadow-md object-cover p-4"
+                sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
                 />
             </div>
 
@@ -75,71 +99,54 @@ export default function AboutPage() {
           </section>
 
           {/* Photos & Life Outside Coding */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-900">What I Do When I’m Not Coding</h2>
-            <div className="space-y-10">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+          <section className="mb-15">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-900">What I Do When I’m Not Coding</h2>
+            <Slider {...sliderSettings}>
+              {[
+                {
+                  src: "/images/Screenshot 2024-09-26 at 6.53.20 PM.png",
+                  alt: "Mentoring",
+                  text: "I spend time mentoring young engineers, guiding them through the world of software development.",
+                },
+                {
+                  src: "/images/i-ZrWFGmX-X4.jpg",
+                  alt: "Graduation",
+                  text: "After teaching at The Marcy Lab School in Brooklyn, NY, I proudly cheered my students on as they crossed the graduation podium.",
+                },
+                {
+                  src: "/images/1738911160281.jpeg",
+                  alt: "G-SWEP",
+                  text: "Most recently, I completed three cycles of the Google Software Engineering Program (G-SWEP), where I worked closely with Google engineers to deepen my knowledge of data structures and algorithms.",
+                },
+                {
+                  src: "/images/Screenshot 2025-05-04 at 10.55.19 PM.png",
+                  alt: "Certificates",
+                  text: "I continuously strive to improve my skills in problem-solving and new technologies. Recently, I successfully completed a Microsoft course: Introduction to Computers and Operating Systems and Security.",
+                },
+                {
+                  src: "/images/ChristmasEditionByRR_7497.jpg",
+                  alt: "Family",
+                  text: "Last but not least, my family is my strongest support system, and I’m grateful for their unwavering love and encouragement.",
+                },
+              ].map((slide, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center h-[200px] w-full bg-gray-50 rounded-md px-6 py-6 text-center"
+              >
                 <Image
-                  src="/images/Screenshot 2024-09-26 at 6.53.20 PM.png"
-                  alt="Mentoring"
+                  src={slide.src}
+                  alt={slide.alt}
                   width={400}
                   height={250}
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg object-contain mx-auto h-[250px] mb-6"
                 />
-                <p className="text-gray-700 text-lg font-serif">
-                  I spend time mentoring young engineers, guiding them through the world of software development.
+                <p className="text-gray-700 text-lg font-serif leading-7 max-w-xl">
+                  {slide.text}
                 </p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                <Image
-                  src="/images/i-ZrWFGmX-X4.jpg"
-                  alt="Creativity & Friends"
-                  width={400}
-                  height={250}
-                  className="rounded-lg shadow-md"
-                />
-                <p className="text-gray-700 text-lg font-serif">
-                After teaching at The Marcy Lab School in Brooklyn, NY, I proudly cheered my students on as they crossed the graduation podium.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                <Image
-                  src="/images/1738911160281.jpeg"
-                  alt="Creativity & Friends"
-                  width={400}
-                  height={250}
-                  className="rounded-lg shadow-md"
-                />
-                <p className="text-gray-700 text-lg font-serif">
-                Most recently, I completed three cycles of the Google Software Engineering Program (G-SWEP), where I worked closely with Google engineers to deepen my knowledge of data structures, algorithms, 
-                and interview preparation.</p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                <Image
-                  src="/images/Screenshot 2025-05-04 at 10.55.19 PM.png"
-                  alt="Certificates"
-                  width={400}
-                  height={250}
-                  className="rounded-lg shadow-md"
-                />
-                <p className="text-gray-700 text-lg font-serif">
-                  I continuously strive to improve my skills in problem-solving and new technologies. Recently, I successfully completed a Microsoft course: 
-                  Introduction to Computers and Operating Systems and Security.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                <Image
-                  src="/images/ChristmasEditionByRR_7497.jpg"
-                  alt="Creativity & Friends"
-                  width={400}
-                  height={250}
-                  className="rounded-lg shadow-md"
-                />
-                <p className="text-gray-700 text-lg font-serif">
-                  Last but not least, my family is my strongest support system, and I’m grateful for their unwavering love and encouragement.
-                </p>
-              </div>
-            </div>
+
+              ))}
+            </Slider>
           </section>
 
         {/* Where to find me */}

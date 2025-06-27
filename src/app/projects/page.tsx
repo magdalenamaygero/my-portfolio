@@ -74,7 +74,7 @@ export default function ProjectsPage() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                        className="px-4 py-2 w-20 text-sm text-center border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
                       >
                         GitHub
                       </a>
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
                         href={project.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                        className="px-4 py-2 w-20 text-sm text-center border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
                       >
                         Website
                       </a>
@@ -94,7 +94,7 @@ export default function ProjectsPage() {
                         href={project.presentation}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                        className="px-4 py-2 text-sm w-20 text-center border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
                       >
                         System
                       </a>
@@ -104,7 +104,7 @@ export default function ProjectsPage() {
                         href={project.figma}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-4 py-2 text-sm border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
+                        className="px-4 py-2 w-20 text-sm text-center border border-purple-300 bg-[#8E9AAF] text-white rounded hover:bg-[#7898d2] transition"
                       >
                         Figma
                       </a>
