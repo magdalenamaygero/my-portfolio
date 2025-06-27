@@ -27,7 +27,6 @@ export default function AboutPage() {
   ],
 };
 
-
   return (
 <main className="flex-1 px-6 py-12 bg-gradient-to-b from-white to-gray-50">
       <PageContainer>
@@ -155,17 +154,17 @@ export default function AboutPage() {
               <h2 className="text-2xl font-semibold mb-6 text-gray-900">Where to Find Me</h2>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>
-                  <a href="https://www.linkedin.com/in/magdalenamgero/" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                  <a href="https://www.linkedin.com/in/magdalenamgero/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     LinkedIn
                   </a>
                 </li>
                 <li>  
-                  <a href="https://medium.com/@magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                  <a href="https://medium.com/@magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     Medium
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/Magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:font-bold">
+                  <a href="https://github.com/Magdalenamgero" target="_blank" rel="noopener noreferrer" className="hover:underline">
                     GitHub
                   </a>
                 </li>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PageContainer({ children }: { children: React.ReactNode }) {
   return (
-    <div className="max-w-full sm:max-w-2xl px-4 sm:px-6 md:px-8 mx-auto py-8 shadow-2xl bg-grey-50 rounded-lg border-1 border-purple-300">
+    <div className="max-w-full sm:max-w-2xl px-4 sm:px-6 md:px-8 mx-auto py-8 shadow-2xl bg-grey-200 rounded-lg border-1 border-[#bfc8d8] mt-5">
       {children}
     </div>
   );
